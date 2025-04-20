@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Kingdom | Login</title>
+  <!-- Google Fonts - Noto Sans JP for Japanese text -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Background Container -->
+  <div class="background-container">
+    <img src="imagepro.jpg" alt="Anime Background" class="background-image">
+  </div>
+
+  <!-- Login Container -->
+  <div class="login-container">
+    <div class="login-card" id="loginCard">
+      <h1>アニメ王国</h1>
+      <h2>Anime Kingdom</h2>
+      <p class="japanese-text">「あなたの冒険が始まる」</p>
+      <p class="japanese-text">[Your adventure begins here]</p>
+
+      <div class="input-group">
+        <input type="text" id="username" required>
+        <label for="username">Username</label>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" required>
+        <label for="password">Password</label>
+      </div>
+
+      <button class="login-btn" id="loginBtn">ログイン (Login)</button>
+    </div>
+  </div>
+
+  <!-- Enter Kingdom Button -->
+  <button class="enter-kingdom-btn" id="enterKingdomBtn">Enter the Kingdom</button>
+
+  <!-- Video Container -->
+  <div class="video-container" id="videoContainer">
+    <video id="animeVideo" loop playsinline preload="auto">
+      <source src="videopro.mp4" type="video/mp4" quality="high">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Watermark -->
+  <div class="watermark">
+    <p>Created by Rudra Vishwakarma</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/_rudra.aaaaa?igsh=b3dvdmFhNjA5ZzI0" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://x.com/Rudracavin?t=1XoePwe1yJAjJa1Mc6fwEw&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/rudra-vishwakarma-80b7a0269" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Rudraa01" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

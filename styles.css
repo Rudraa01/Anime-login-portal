@@ -53,7 +53,8 @@ body {
 }
 
 .login-container {
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   position: relative;
   z-index: 1;
 }
@@ -62,7 +63,7 @@ body {
   background: rgba(16, 18, 27, 0.8);
   backdrop-filter: blur(20px);
   border-radius: 20px;
-  padding: 40px;
+  padding: 30px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease;
   transform-style: preserve-3d;
@@ -250,4 +251,105 @@ body {
 .social-links a:hover {
   color: #7ee8fa;
   transform: translateY(-3px);
+}
+
+/* Media Queries for Responsive Design */
+
+/* Small phones (up to 480px) */
+@media screen and (max-width: 480px) {
+  .login-card {
+    padding: 20px;
+  }
+
+  .login-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .login-card h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .japanese-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .input-group input {
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+
+  .input-group label {
+    top: 12px;
+    left: 15px;
+    font-size: 14px;
+  }
+
+  .login-btn {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .enter-kingdom-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+
+  .watermark {
+    bottom: 10px;
+    right: 10px;
+    font-size: 10px;
+  }
+}
+
+/* Medium phones and small tablets (480px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .login-card {
+    padding: 25px;
+  }
+
+  .login-card h1 {
+    font-size: 2rem;
+  }
+
+  .enter-kingdom-btn {
+    padding: 18px 35px;
+    font-size: 20px;
+  }
+}
+
+/* Fix for mobile hover effects */
+@media (hover: none) {
+  .login-card:hover {
+    transform: none;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  }
+
+  .login-btn:hover {
+    transform: none;
+    box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+  }
+
+  .social-links a:hover {
+    transform: none;
+  }
+
+  /* Add active state for better touch feedback */
+  .login-btn:active {
+    transform: scale(0.98);
+    background: linear-gradient(45deg, #ff5b5b, #ff7e7e);
+  }
+
+  .enter-kingdom-btn:active {
+    transform: translate(-50%, -50%) scale(0.98);
+  }
+
+  .social-links a:active {
+    color: #7ee8fa;
+  }
 }

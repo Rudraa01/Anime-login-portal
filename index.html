@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Anime Kingdom | Login</title>
   <!-- Google Fonts - Noto Sans JP for Japanese text -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -26,12 +26,12 @@
       <p class="japanese-text">[Your adventure begins here]</p>
 
       <div class="input-group">
-        <input type="text" id="username" required>
+        <input type="text" id="username" required autocomplete="username" autocapitalize="none">
         <label for="username">Username</label>
       </div>
 
       <div class="input-group">
-        <input type="password" id="password" required>
+        <input type="password" id="password" required autocomplete="current-password">
         <label for="password">Password</label>
       </div>
 
@@ -65,3 +65,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
